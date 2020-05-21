@@ -9,8 +9,7 @@ for (let i = 0; i < ButtonsArray.length; i++) {
   copyButtonsArray.push(ButtonsArray[i].classList[1]);
 }
 
-//  changing colors
-
+// all different colors that the application will use
 const colorChoices = [
   "btn-primary",
   "btn-danger",
@@ -26,16 +25,22 @@ function ChangeColor(buttonData) {
 
   if (colorSetting === "Random") {
     buttonsColorRANDOM();
+    
   } else if (colorSetting === "Reset") {
     buttonsColorRESET();
+    
   } else if (colorSetting === "Red") {
     buttonsColorRED();
+    
   } else if (colorSetting === "Green") {
     buttonsColorGREEN();
+    
   } else if (colorSetting === "Blue") {
     buttonsColorBLUE();
   }
 }
+
+// handling onClick functions for every button
 
 function buttonsColorRED() {
   for (let i = 0; i < ButtonsArray.length; i++) {
